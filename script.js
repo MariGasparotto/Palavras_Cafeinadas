@@ -32,3 +32,13 @@ $('.carousel').slick({
     slidesToShow: 4,
     slidesToScroll: 4
   });
+
+  const menuDiv = document.getElementById('nav-mobile')
+  const btnAnimar = document.getElementById('btn-menu')
+
+  menuDiv.addEventListener('click', animarMenu) 
+  
+  function animarMenu(){
+    menuDiv.classList.toggle('abrir')
+    btnAnimar.classList.toggle('ativo')
+  }

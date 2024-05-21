@@ -54,6 +54,7 @@
     color: black;
     margin-top: -1.5%;
     height: 105%;
+    width: 100%;
 }
 
 
@@ -65,10 +66,7 @@
     text-align: justify;
     margin-left: 200;
     align-items: center;
-}
-
-.carousel {
-    align-items: center;
+    margin-left: 50%;
 }
 
 .navigation {
@@ -112,6 +110,7 @@
     background:#fff; 
     box-shadow: 1px 0px 1.2px 0px #ffffff; 
     position:relative; 
+    padding: 50px;
 }
 .formularioContato:before { 
     margin-top: -200;
@@ -253,7 +252,186 @@
   
   #slide1:checked ~ .slides .slide:nth-child(1),
   #slide2:checked ~ .slides .slide:nth-child(2),
-  #slide3:checked ~ .slides .slide:nth-child(3) {
+  #slide3:checked ~ .slides .slide:nth-child(3),
+  #slide4:checked ~ .slides .slide:nth-child(4) {
     display: block;
   }
+
+  .menu-mobile {
+    display: none;
+    width: 835px;
+    background-color: #1F0C00;
+    align-items: center;
+  }
+
+  .botoes {
+    display: none;
+    align-items: center;
+  }
+
+  .nav-mobile
+  {
+    display: none;
+  }
+
+  @media screen and (max-width: 758px) {
+
+    .titulo1 {
+        display: none;
+    }
+
+    .titulo2
+    {
+        display: none;
+    }
+
+    .logoMenu 
+    {
+        display: none;
+    }
+
+    .titulo3
+    {
+    display: none;
+    }
+
+    .numeroMenu
+    {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu-mobile{
+        display: inherit;
+        width: 872px;
+        color: #fff;
+        margin-top: -10%;
+        align-items: center;
+    }
+
+    .nav-mobile{
+        background-color: #fff;
+        display: block;
+        color: #000000;
+        text-decoration: none;
+        padding: 100px 350px;
+        font-size: large;
+        position: absolute;
+        backdrop-filter: blur(10px);
+        width: 872px;
+        margin-left: -0.3%;
+        visibility: hidden;
+        transition: 0.5s;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .nav-mobile.abrir{
+        visibility: visible;
+    }
+
+    .titulo1 {
+        display: none;
+    }
+
+    .titulo2
+    {
+        display: none;
+    }
+
+    .logoMenu 
+    {
+        display: none;
+    }
+
+    .titulo3
+    {
+    display: none;
+    }
+
+    .numeroMenu
+    {
+        display: none;
+    }
+
+    .introducao {
+        width: 873px;
+        font-size: large;
+        margin-top: -8%;
+    }
+
+    .Palavras-Cafeinadas {
+        padding: 1% 40%;
+        margin-top: -10%;
+    }
+
+    .logoMenuMobile {
+        padding: 5% 10%;
+    }
+
+    .btn-menu {
+        padding: 2%;
+        margin-left: 80%;
+        margin-top: -8%;
+        background-color: #1F0C00;
+        border: #291505;
+
+    }
+
+    .paragrafo {
+        display: none;
+    }
+
+    .sobrenos {
+        width: 873px;
+        font-size: medium;
+        margin-top: -65%;
+        align-items: center;
+    }
+
+    .imagem1 {
+        display: none;
+    }
+
+    .cafeteria {
+        font-size: smaller;
+    }
+
+
+    .tabela
+    {
+        display: none
+    }
+
+    .imagem {
+        width: 873px;
+    }
+
+    .cafeteria{
+        flex-direction: column;
+        width: 873px;
+        font-size: smaller;
+        margin-top: -6%;
+        font-size: smaller;
+    }
+
+    .entreemcontato {
+        width: 850px;
+        font-size: smaller;
+    }
+
+    .botoes {
+        display: block;
+        align-items: center;
+    }
+
+    .footer {
+        width: 850px;
+        font-size: smaller;
+        margin-bottom: -20%;
+    }
+}
 
